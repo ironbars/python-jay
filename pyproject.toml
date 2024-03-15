@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "jay"
+version = "0.1.0"
+description = "JSON <-> YAML converter"
+authors = ["Marc Patton <pattonmj8503@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+"ruamel.yaml" = "^0.18.6"
+
+[tool.poetry.scripts]
+jay = "jay.jay:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
